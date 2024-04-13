@@ -1,0 +1,68 @@
+
+<html>
+<head>
+<title>Untitled Document</title>
+<script language="JavaScript" src="calculator.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#22B5FF ">
+<div align="center"><font color="#000000" size="+5">My Personal Home Mortgage Calculator</font>
+</div>
+<form name="Form1">
+<table width="500" height="152" border="1" align="center" cellpadding="5" cellspacing="0" bgcolor="#D5EBF5  ">
+  <tr>
+	<td width="228" height="150" align="center" valign="middle">
+
+<div align="justify"><font color="#080E11 " face="Arial, Helvetica, sans-serif">
+To use the Home Mortgage Calculator enter the amount of the mortgage, the interest of the loan, and the number of years. Then click on the &quot;Calculate&quot; button to see an estimate of your monthly payment.
+</font></div>
+	
+	</td>
+	
+	<td width="246" align="center" valign="middle">
+	<!-- add table and form inside this cell -->
+	<tr>
+				<td> Mortgage:</td>
+				<td> <input type="text" name="Amount"
+  	    	value= " " size="9"> </td>
+  <tr>
+  	    <td> Interest:</td>
+				<td>  <input type="text" name="Rate"
+  	    	value= " " size="9">  </td>
+
+  </tr>
+
+	<tr>
+  	    <td> Years: </td>
+
+				<td>
+					<select name="Years">
+						<option value="0">0</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+					</select>
+				</td>
+
+  </tr>
+	
+	<tr>
+  	    <td>  <input type="button" value="Calculate"
+  	    	onclick="mortCalc(Form1)"></td>
+
+				<td> <input type="reset" value="Reset"> </td>
+
+  </tr>
+  <tr>
+  	    <td>Your monthly payment:</td>
+				<td>   <input type="text" name="Payment"  size="9">    							 </td>
+
+  </tr>
+	</td>
+</tr>
+</table>
+</td>
+</form>
+</body>
+</html>
